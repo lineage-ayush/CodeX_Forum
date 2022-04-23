@@ -4,25 +4,20 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="private/codex.css">
-    <!-- Bootstrap CSS -->
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-   
+    <link rel="stylesheet" href="codex.css">
     <title>CodeX Forum </title>
   </head>
   <body>
    
     <?php include'private/_navbar.php'?>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis explicabo voluptatum accusamus harum aliquid quia dolor sit adipisci commodi, autem repellendus molestias eius sequi error fuga asperiores architecto voluptates enim? Natus sunt fugiat, ipsum in consequatur reprehenderit quam sed quod recusandae debitis alias tempora magni quaerat excepturi ut impedit tempore eveniet facilis nulla placeat aliquid. Asperiores atque possimus odio saepe consequatur temporibus laudantium numquam dolorum. Quisquam ut est modi ex! Quibusdam temporibus id quaerat, cum provident odit, corporis neque dolor soluta, dolorum fugiat voluptates unde dicta possimus distinctio rem incidunt esse repudiandae enim officia harum at. Nostrum consequatur similique harum sequi quas sapiente distinctio quibusdam porro, ab vel sunt temporibus doloribus laboriosam voluptatum nihil a. Reiciendis quis laudantium, at consequuntur sed ipsum perspiciatis obcaecati veritatis repellendus ullam odit! Magnam vel cum sed. Impedit molestiae porro accusantium dolores. Nulla consectetur commodi dolorum libero laudantium eos nostrum, optio molestiae voluptatem, ullam tempora velit. Alias ea maiores ullam repellendus. Et saepe possimus quasi sit, pariatur aperiam sunt? Veritatis optio sed vitae at iste! Eaque, enim quasi molestias quaerat deleniti nam explicabo quidem vitae sequi cum perspiciatis dolorum veniam beatae! Velit similique maiores veritatis consequatur doloribus deserunt, architecto, aut quisquam quam nesciunt tempore dolore in pariatur veniam quos, ipsa nostrum ad. Fugiat expedita quis hic quidem quasi ipsam, cum, esse minus iure sapiente possimus aut aliquam porro beatae similique debitis veritatis officiis vero vitae nulla! Voluptatum, animi totam officia error adipisci cum architecto ratione ad possimus iusto cupiditate sit omnis alias autem ut, aliquam, labore sunt obcaecati placeat ipsa laborum facilis explicabo eaque molestiae! Consequatur beatae quod nostrum ipsa vitae deleniti error laboriosam porro officiis quaerat veniam, eaque hic sit ex? Molestiae facere voluptate similique cupiditate. Dolores quas iusto blanditiis labore odio hic magni provident molestiae ratione quae laudantium tempora excepturi eius debitis dolor aliquam, velit culpa aspernatur natus corporis aut adipisci illum. Aut ad excepturi maiores explicabo iusto dolore minima recusandae. Eaque ducimus debitis aliquam fugit inventore ipsa corrupti laborum sit illo id quos velit, alias delectus, voluptatum temporibus aut dicta iure, voluptas labore deleniti soluta quam doloribus! Nulla sit aliquid fugit qui quisquam eius veniam hic, tempore aspernatur mollitia dolores, expedita, culpa adipisci doloribus laborum repudiandae molestiae tenetur. Molestias suscipit ab, temporibus neque quis aperiam, explicabo aspernatur molestiae magni officia, asperiores similique ad! Assumenda amet odit quos provident in id impedit, labore beatae explicabo, autem obcaecati repellendus officia? Porro id maxime aliquid magni ducimus hic iusto nam, vero tenetur delectus adipisci atque quo, ex mollitia nihil esse et molestiae, doloremque nisi facere reprehenderit nemo eaque architecto. Optio totam incidunt laudantium eius dolorem laboriosam possimus porro quisquam facere harum qui veniam, consequatur ratione ad quam, maiores repellat tempore odio impedit? Culpa suscipit laudantium, consequuntur recusandae totam, voluptatem maiores optio ratione qui non quisquam. Vel id velit suscipit inventore. Ducimus laborum at commodi? Incidunt cumque tenetur architecto consectetur illo accusantium odio praesentium qui aut nobis accusamus neque, fuga quibusdam numquam fugit pariatur, at eveniet ducimus! Repellat totam accusamus velit rerum minima! Sit omnis esse suscipit neque modi repudiandae ab. Ratione cumque facere ad? Aliquam error beatae tempora nisi esse corrupti voluptatem, autem libero nostrum inventore a illum nulla et distinctio id perspiciatis. Reiciendis sed itaque sequi. Doloribus expedita accusamus provident mollitia iure natus est sed optio, unde sapiente adipisci autem veritatis tenetur sit tempora odit earum assumenda consequatur.</p>
-    <!-- Optional JavaScript; choose one of the two! -->
+    
 <?php include'private/_footer.php'?>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
