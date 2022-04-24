@@ -30,7 +30,7 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       </li>
     </ul>
 
-    <form class="d-flex">
+    <form class="d-flex col-6">
       <input class="form-control me-2" type="search" placeholder="Type your Query here..." aria-label="Search">
       <button class="searchs btn btn-outline-secondary" type="submit">Search</button>
       <button class="btn btn-primary mx-3" type="submit">Thread+</button>
