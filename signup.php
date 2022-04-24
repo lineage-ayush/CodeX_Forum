@@ -4,7 +4,7 @@ $showError = false;
 $exists = false;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     include'partials/_dbconnect.php';
-
+    $username = $_POST["username"];
     $email = $_POST["email"];
     $password = $_POST["password"];
     $cpassword = $_POST["cpassword"];
@@ -13,11 +13,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $result = mysqli_query($conn, $sql);
     $num1 = mysqli_num_rows($result);
 
-    if($num1 != 1){
+    if($num1 != 0){
         $exists = true;
     }
     else if($password === $cpassword){
-        $sql1 = "INSERT INTO `users` (`email`, `password`, `dt`) VALUES ('$email', '$password', current_timestamp())";
+        $sql1 = "INSERT INTO `users` (`username`, `email`, `password`, `dt`) VALUES ('$username', '$email', '$password', current_timestamp());";
         $result1 = mysqli_query($conn, $sql1);
         if($result1){
             $showAlert = true;
@@ -74,7 +74,11 @@ if($showError){
                 <h3>Signup to CodeX Forum</h3>
 
                 <form action="signup.php" method="post">
-                    <div class="mt-3 mb-2">
+                <div class="mt-3 mb-2">
+                        <label for="username" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Enter your first name" />
+                    </div>
+                    <div class="mb-1">
                         <label for="email" class="form-label">Email address</label>
                         <input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email address" />
                     </div>

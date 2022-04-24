@@ -17,6 +17,6 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
     <title> Threads+</title>
 </head>
 <body>
-    <p>Add your new thread here <?php echo $_SESSION['username'] ?> </p>
+    <p>Add your new thread here <?php echo $_SESSION['email'] ?> </p>
 </body>
 </html>
