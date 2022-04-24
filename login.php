@@ -1,3 +1,29 @@
+<?php
+$login = false;
+$showError = false;
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+    include'partials/_dbconnect.php';
+
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+    
+    $sql = "SELECT * FROM `users` WHERE email = '$email' AND password = '$password'";
+    $result = mysqli_query($conn, $sql);
+    $num = mysqli_num_rows($result);
+    if($num == 1){
+      $login = true;
+      session_start();
+      $_SESSION['loggedin'] = true;
+      $_SESSION['email'] = $email;
+      header("location:index.php");            
+    }else{
+        $showError = "Invalid Credentials";
+    }
+
+}
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,24 +37,32 @@
     <title>Login - CodeX Forum </title>
     <style>
       .login{
-        margin-top: 8em;
+        margin-top: 6em;
       }
       </style>
   </head>
   <body>
     
-  <?php include'private/_navbar.php'?>
+  <?php include'partials/_navbar.php'?>
+  <?php
+    if($showError){
+   echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  <strong>Error!</strong> ' . $showError .'
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>';
+}
+?>
   <div class="container login col-md-4">
     <h3>Login to CodeX Forum</h3>
     <form action="login.php" method="post">
       <div class="mt-3 mb-2">
-        <label for="email1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email1" placeholder="Enter your Email address">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" name = "email" id="email" placeholder="Enter your Email address">
       
       </div>
       <div class="mb-1">
-        <label for="password1" class="form-label">Password</label>
-        <input type="password" class="form-control" name ="password1" placeholder="*******" id="password1">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" name ="password" placeholder="*******" id="password">
       </div>
     
       <button type="submit" class="btn btn-primary mt-3">Login</button>
@@ -38,7 +72,7 @@
   </div>
 
 
-  <?php include'private/_footer.php'?>
+  <?php include'partials/_footer.php'?>
    
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 

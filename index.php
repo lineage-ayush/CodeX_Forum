@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <?php include'private/_navbar.php'?>
+    <?php include'partials/_navbar.php'?>
     <div class="container">
         <h2 class="text-center my-3">CodeX - Categories</h2>
         <div class="row">
@@ -83,7 +83,7 @@
         </div>
     </div>
 
-    <?php include'private/_footer.php'?>
+    <?php include'partials/_footer.php'?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
